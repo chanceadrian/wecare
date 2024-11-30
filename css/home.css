@@ -1,0 +1,151 @@
+body {
+    gap: 10px;
+    background: #fff;
+
+    section {
+        text-align: center;
+
+        h5 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 52px;
+            font-weight: 400;
+        }
+    }
+
+    .row {
+        gap: 10px;
+    }
+}
+
+.case {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-block: 60px;
+
+    a {
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 500;
+        padding: 7px 16px;
+        border-radius: 100px;
+        border: 1.5px solid var(--primary);
+        width: fit-content;
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--primary-d);
+        background: var(--primary);
+        border: 1.5px solid var(--primary);
+        cursor: pointer;
+    }
+}
+
+.shelf {
+    color: var(--primary-d);
+    padding-block: 120px 0px;
+    background: linear-gradient(to bottom, #000 0%, #5B7C94 75%, #96AEBF 100%);
+    min-height: 1400px;
+
+    .view {
+        gap: 56px;
+    }
+
+    img {
+        max-width: 980px;
+    }
+
+    a {
+        border: 1.5px solid var(--primary-d);
+    }
+
+    a:hover {
+        color: var(--primary);
+        background: var(--primary-d);
+        border: 1.5px solid var(--primary-d);
+    }
+}
+
+.in-decision {
+    background: linear-gradient(to bottom, #F3F5F7, #FFF0F2);
+    color: var(--primary);
+    min-height: 880px;
+}
+
+.idea {
+    height: 740px;
+    max-height: 740px;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F5F7;
+
+    h1 {
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    h5 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    img {
+        position: absolute;
+        bottom: 52px;
+        max-width: 524px;
+        z-index: 0;
+    }
+}
+
+.echo {
+    justify-content: center;
+    padding-block: 0px 120px;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        background: linear-gradient(to bottom right, #3F86C6, #8370B4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 68px;
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: 52px;
+        line-height: 56px;
+        filter: blur(0.5px);
+        opacity: 0.6;
+        margin-bottom: -4px;
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 44px;
+        filter: blur(1px);
+        opacity: 0.3;
+        margin-bottom: -4px;
+    }
+
+    h4 {
+        font-size: 32px;
+        line-height: 36px;
+        filter: blur(1.5px);
+        opacity: 0.15;
+        margin-bottom: -4px;
+    }
+}
