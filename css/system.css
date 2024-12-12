@@ -53,12 +53,14 @@ footer,
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', "system-ui", sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
     width: 100vw;
     position: relative;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+
+    section {
+        overflow-x: hidden;
+    }
 
     .view {
         width: 980px;
@@ -171,11 +173,8 @@ footer,
 nav {
     display: flex;
     padding: 4px;
-    gap: 48px;
+    gap: 56px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.75);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
     position: absolute;
     top: 16px;
     left: 50%;
@@ -200,7 +199,6 @@ nav {
 }
 
 nav.dark {
-    background-color: rgba(0, 0, 0, 0.75);
 
     a {
         color: var(--secondary-d);
