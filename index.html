@@ -4,74 +4,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Chance</title>
+    <title>Chance Castaneda</title>
     <link rel="stylesheet" href="css/system.css">
     <link rel="stylesheet" href="css/home.css">
-    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" content="#F3F5F7">
+    <script src="js/home.js" defer></script>
     <!-- <link rel="icon" href="im/main/home-icon.webp" type="image/webp"> -->
 </head>
 
 <body>
-    <nav class="dark">
+    <nav>
         <a class="selected" href="index.html">Home</a>
         <a href="shelf.html">Shelf</a>
         <a href="indecision.html">In Decision</a>
-        <a href="third.html">Third</a>
-        <a href="about.html">About</a>
     </nav>
-    <section class="case shelf">
+    <section class="exhibit landscape me">
         <div class="view">
-            <div class="text">
-                <div class="eyebrow">
-                    <h5>Shelf</h5>
-                    <h1>Your life.<br>Shelved beautifully.</h1>
-                </div>
-                <a>Learn more</a>
+            <div class="eyebrow">
+                <h5>Human Interface Design</h5>
+                <h2>Chance Castaneda</h2>
             </div>
-            <img src="im/shelf/key.webp">
-        </div>
-    </section>
-    <section class="case in-decision">
-        <div class="view">
-            <div class="text">
-                <div class="eyebrow">
-                    <h5>In Decision</h5>
-                    <h1>The power to find clarity.</h1>
-                </div>
-                <a>Learn more</a>
-            </div>
-        </div>
-    </section>
-    <section class="row">
-        <div class="case idea">
-            <div class="text">
-                <div class="eyebrow">
-                    <h1>What is Design?</h1>
-                    <h5>Essential Principles</h5>
-                </div>
-                <a>Learn more</a>
-            </div>
-            <img src="im/essays/braun.webp">
-        </div>
-        <div class="case idea echo">
-            <div class="text">
-                <div class="eyebrow">
-                    <div>
-                        <h4>Think Far, Stay Foolish.</h4>
-                        <h3>Think Far, Stay Foolish.</h3>
-                        <h2>Think Far, Stay Foolish.</h2>
-                        <h1>Think Far, Stay Foolish.</h1>
+            <div class="wall">
+                <a class="shelf"
+                    data-text="A sole exploration into the art of keeping things worth remembering, across the objects of our lives.">
+                    <div class="text">
+                        <div class="eyebrow">
+                            <h1>Shelf</h1>
+                            <h5>Your Life. Shelved Beautifully.</h5>
+                        </div>
+                        <button>Learn more</button>
                     </div>
-                    <h5>A Guiding Ethos for the Next 100 Years</h5>
-                </div>
-                <a>Learn more</a>
+                    <div class="hold">
+                        <img src="im/shelf/shelf.webp">
+                    </div>
+                </a>
+                <a class="indecision"
+                    data-text="Life doesn't ask us what we want. It presents us with options. Here's a way of trying to make the most of them.">
+                    <div class="text">
+                        <div class="eyebrow">
+                            <h5>In Decision</h5>
+                            <h1>The power to find clarity.</h1>
+                        </div>
+                        <button>Learn more</button>
+                    </div>
+                    <div class="hold">
+                        <img src="im/indecision/indecision.webp">
+                    </div>
+                </a>
+                <li class="clarity"
+                    data-text="Approaches for a process in design. Learn more on this — and how I see the world — in the next two essays.">
+                    <h3>Clarity, focus, care.</h3>
+                </li>
+                <a class="echo"
+                    data-text="Ask 100 year questions, and act as if your heroes are speaking to you: an expression of my aggressive optimisim.">
+                    <div class="text">
+                        <div class="eyebrow">
+                            <div>
+                                <h4>Think Far, Stay Foolish.</h4>
+                                <h3>Think Far, Stay Foolish.</h3>
+                                <h2>Think Far, Stay Foolish.</h2>
+                                <h1>Think Far, Stay Foolish.</h1>
+                            </div>
+                            <h5>A Guiding Ethos for the Next 100 Years</h5>
+                        </div>
+                        <button>Learn more</button>
+                    </div>
+                </a>
+                <a class="design"
+                    data-text="Requirements of design are constantly changing. The most important question is: what lasts, and why?">
+                    <div class="text">
+                        <div class="eyebrow">
+                            <h1>What is Design?</h1>
+                            <h5>Essential Principles</h5>
+                        </div>
+                        <button>Learn more</button>
+                    </div>
+                    <img src="im/essays/braun-w.webp">
+                </a>
             </div>
+            <p id="caption"></p>
+        </div>
+    </section>
+    <section class="exhibit">
+        <div class="view">
+            <div class="eyebrow">
+                <h5>Who Am I?</h5>
+                <h2>Start with my heroes.</h2>
+            </div>
+            <div class="wall">
+                <li class="rams"
+                    data-text="Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design.">
+                    <h5>Dieter Rams</h5>
+                </li>
+                <li class="jobs"
+                    data-text="We truly believe that by making something useful, empowering and beautiful, we express our love for humanity.">
+                    <h5>Steve Jobs</h5>
+                </li>
+                <li class="ive"
+                    data-text="We care, way beyond any sort of functional imperative. Ours is a victory for beauty, for purity — for giving a damn.">
+                    <h5>Jony Ive</h5>
+                </li>
+                <li class="paglia"
+                    data-text="Art isn't a luxury for any civilization. In an age of alluring, magical machines, a society that forgets art risks losing its soul.">
+                    <h5>Camille Paglia</h5>
+                </li>
+            </div>
+            <p id="caption"></p>
+        </div>
+    </section>
+    <section class="exhibit audio">
+        <div class="view">
+            <div class="eyebrow">
+                <h5>Audio</h5>
+                <h2>Sounds of my life.</h2>
+            </div>
+            <div class="wall">
+                <li class="tears"
+                    data-text="A Cold War bridge between my parents and I's interest. And also home to my go to kareoke song, Head Over Heels.">
+                </li>
+                <li class="four"
+                    data-text="An exercise in expansion — of sound, space, and the mind. My first masterclass on the human condition.">
+                    <ul class="frames">
+                        <li class="tame-1"></li>
+                        <li class="tame-2"></li>
+                        <li class="tame-3"></li>
+                        <li class="tame-4"></li>
+                    </ul>
+                </li>
+                <li class="inter"
+                    data-text="A grandiose challenge to go further and see farther. It's enormity continues to keep my vision cosmic.">
+                </li>
+                <li class="four"
+                    data-text="Sweeping, organic meloncholy brings out a teenage curiosity in me. What is this strange paradise?">
+                    <ul class="frames">
+                        <li class="bh-1"></li>
+                        <li class="bh-2"></li>
+                        <li class="bh-3"></li>
+                        <li class="bh-4"></li>
+                    </ul>
+                </li>
+                <li class="melody"
+                    data-text="Glittery memories of studying late, midnight drives with friends, and slow walks in a redwood forest.">
+                </li>
+                <li class="four"
+                    data-text="An Argentine new wave collection riding on a people's transition away from a decade of dictatorship.">
+                    <ul class="frames">
+                        <li class="arg-1"></li>
+                        <li class="arg-2"></li>
+                        <li class="arg-3"></li>
+                        <li class="arg-4"></li>
+                    </ul>
+                </li>
+                <li class="oblivion"
+                    data-text="A masterclass in synth and string with epic scope, second only to Daft Punk's TRON. Contagious melodies — and fearful odds.">
+                </li>
+            </div>
+            <p id="caption"></p>
+        </div>
+    </section>
+    <section class="exhibit landscape">
+        <div class="view">
+            <div class="eyebrow">
+                <h5>Gallery</h5>
+                <h2>My interests in photos.</h2>
+            </div>
+            <div class="wall">
+                <li class="ny" data-text="Photo 1">
+                    <h5>New York, NY</h5>
+                </li>
+                <li class="sf" data-text="Photo 2">
+                    <h5>San Fransisco, CA</h5>
+                </li>
+                <li class="atx" data-text="Photo 3">
+                    <h5>Austin, TX</h5>
+                </li>
+                <li class="md" data-text="Photo 4">
+                    <h5>Mendoza, Argentina</h5>
+                </li>
+                <li class="gt" data-text="Photo 5">
+                    <h5>Grand Tetons, WY</h5>
+                </li>
+            </div>
+            <p id="caption"></p>
         </div>
     </section>
     <footer>
         <div class="view">
             <a>
-                <h1>Home</h1>
+                <h1>About</h1>
             </a>
             <div class="subs">
                 <div class="sub">
@@ -104,6 +224,9 @@
                     <div class="su">
                         <a>
                             <h4>About</h4>
+                        </a>
+                        <a>
+                            <h4>Audio</h4>
                         </a>
                     </div>
                 </div>

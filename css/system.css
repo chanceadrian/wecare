@@ -187,6 +187,8 @@ nav {
         font-size: 17px;
         align-items: center;
         transition: all 0.3s ease;
+        min-width: 115px;
+        text-align: center;
     }
 
     a:hover {
